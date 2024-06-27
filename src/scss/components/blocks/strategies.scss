@@ -1,0 +1,136 @@
+.block--custom-layout__stra {
+    font-family: $mainFont;
+    padding: 112px 16px;
+
+    @media(max-width: $bp_mobileLandscape){
+        padding: 48px 16px;
+    }
+
+    .stra-inner {
+        max-width: 1200px;
+        margin: 0 auto;
+
+        .stra-list {
+            display: flex;
+            margin: 0 -24.5px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block;
+            }
+        }
+
+        .stra-item {
+            width: 33.33%;
+            padding: 0 24.5px;
+
+            @media(max-width: $bp_tabletPortrait3){
+                width: 100%;
+                margin-bottom: 20px;
+            }
+
+            @media(max-width: $bp_mobileLandscape){
+                margin-bottom: 49px;
+            }
+
+            &:last-child {
+                @media(max-width: $bp_tabletPortrait3){
+                    margin-bottom: 0;
+                }
+            }
+
+            .stra-icon {
+                width: 80px;
+                margin-bottom: 24px;
+
+                @media(max-width: $bp_mobileLandscape){
+                    width: 64px;
+                }
+            }
+
+            .stra-item-title,
+            .stra-item-sub-title {
+                color: #161C2D;
+                font-size: 20px;
+                font-style: normal;
+                font-weight: 500;
+                line-height: 32px;
+                background: #FFF620;
+                display: inline-block;
+                padding: 0 5px;
+
+                @media(max-width: $bp_mobileMenuShift){
+                    font-size: 17px;
+                }
+
+                @media(max-width: $bp_mobileLandscape){
+                   font-size: 20px;
+                }
+            }
+
+            .stra-item-sub-title {
+                display: block;
+                background: transparent;
+            }
+
+            .stra-item-desc {
+                margin-top: 24px;
+                p {
+                    color: var(--text-text-primary, #000);
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    margin: 0;
+
+                    @media(max-width: $bp_mobileLandscape){
+                        font-size: 16px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+
+    .stra-title {
+        margin-bottom: 8px;
+        h2 {
+            margin: 0;
+            text-align: center;
+            font-size: 36px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 50px;
+            max-width: 100%;
+
+            @media(max-width: $bp_mobileLandscape){
+                text-align: left;
+                font-size: 30px;
+                line-height: 38px;
+            }
+        }
+    }
+
+    .stra-desc-title {
+        max-width: 780px;
+        margin: 0 auto;
+        margin-bottom: 64px;
+
+        @media(max-width: $bp_mobile){
+            margin-bottom: 48px;
+        }
+
+        p {
+            text-align: center;
+            font-size: 18px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 26px;
+            margin: 0;
+
+            @media(max-width: $bp_mobileLandscape){
+                text-align: left;
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+    }
+}

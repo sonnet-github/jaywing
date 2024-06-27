@@ -1,0 +1,45 @@
+@font-face {
+    font-family: 'Sailec';
+    src: url('../assets/fonts/Sailec-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Sailec-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: url('../assets/fonts/Sailec-Light.woff2') format('woff2'),
+        url('../assets/fonts/Sailec-Light.woff') format('woff');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: url('../assets/fonts/Sailec-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Sailec-Medium.woff') format('woff');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec-RegularItalic';
+    src: url('../assets/fonts/Sailec-RegularItalic.woff2') format('woff2'),
+        url('../assets/fonts/Sailec-RegularItalic.woff') format('woff');
+    font-weight: normal;
+    font-style: italic;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sailec';
+    src: url('../assets/fonts/Sailec-Thin.woff2') format('woff2'),
+        url('../assets/fonts/Sailec-Thin.woff') format('woff');
+    font-weight: 100;
+    font-style: normal;
+    font-display: swap;
+}
+

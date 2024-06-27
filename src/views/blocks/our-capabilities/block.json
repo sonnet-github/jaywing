@@ -1,0 +1,24 @@
+{
+    "name": "acf/our-capabilities",
+    "title": "Our Capabilities",
+    "description": "Our Capabilities. Has the option to cover full width or the container width.",
+    "category": "custom-layout",
+    "icon": "format-image",
+    "keywords": ["banner", "image"],
+    "acf": {
+        "mode": "edit",
+        "renderTemplate": "our-capabilities.php"
+    },
+    "align": "full",
+    "supports" : {
+        "anchor" : true
+    },
+    "example": {
+        "attributes": {
+            "mode" : "edit",
+            "data" : {
+                "preview_image" : "our-capabilities/preview.jpg"
+            }
+        }
+    }
+}

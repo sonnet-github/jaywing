@@ -1,0 +1,49 @@
+.block--custom-layout__brands {
+    background-color: #000;
+    text-align: center;
+    font-family: $mainFont;
+    padding: 80px 16px;
+
+    @media(max-width: $bp_tabletPortrait3){
+        padding: 48px 16px;
+    }
+
+    .brand-title {
+        text-align: center;
+        font-family: Sailec;
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 32px;
+        color: #fff;
+        margin-bottom: 80px;
+
+        @media(max-width: $bp_mobile){
+            font-size: 20px;
+            margin-bottom: 30px;
+        }
+    }
+
+    .brand-slide-wrap {
+        max-width: 1368px;
+        margin: 0 auto;
+
+        .slick-track {
+            display: flex;
+            align-items: center;
+
+            .brand-logo-slide-item {
+                padding: 0 30px;
+
+                @media(max-width: $bp_mobileLandscape){
+                    padding: 0 15px;
+                }
+
+                img {
+                    margin: 0 auto;
+                    display: block;
+                }
+            }
+        }
+    }
+}

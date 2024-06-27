@@ -1,0 +1,184 @@
+&{
+    scroll-behavior: smooth;
+}
+
+&, body{
+    background: $canvasBackground;
+    font-family: $mainFont;
+}
+
+#page-content{
+    position: relative;
+    z-index: 1;
+    font-family: getFont();
+    font-size: $defaultFontSize;
+    line-height: $defaultLineHeight;
+    width: 100%;
+    max-width: $pageMaxWidth;
+    margin: auto;
+}
+
+&.scroll-lock,
+body.scroll-lock{
+    overflow: hidden !important;
+}
+
+$verticalPos : 'top' 'bottom' 'middle';
+$horizontalPos : 'left' 'center' 'right';
+@each $position in $verticalPos {
+    .va-#{$position} { 
+        vertical-align: #{$position};
+    }
+}
+@each $position in $horizontalPos {
+    .ta-#{$position} { 
+        text-align: #{$position};
+    }
+}
+
+div#page-main {
+    overflow: hidden;
+}
+
+$displays : 'block' 'flex' 'table' 'inline-block' 'inline' 'table-cell' 'table-row' 'grid';
+@each $display in $displays {
+    .dp-#{$display} {
+        display: #{$display};
+    }
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.tb-wr{
+    display: table;
+    width: 100%;
+}
+
+.tb-r-wr{
+    display: table-row;
+}
+
+.tb-c-wr{
+    display: table-cell;
+}
+
+a{
+    color: inherit;
+    text-decoration: underline;
+    outline: none;
+}
+
+ul{
+    list-style-type: disc;
+    list-style-position: inside; 
+    text-align: left;
+    padding-left: 15px;
+}
+
+ol{
+    list-style: decimal;
+    list-style-position: inside; 
+    text-align: left;
+    padding-left: 15px;
+}
+
+.container-block{
+    max-width: $containerMaxWidth;
+    box-sizing: border-box;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 24px;
+    
+    @media(max-width: $bp_desktopSmall){
+        padding: 0px 24px;
+    }
+}
+
+.content-block{
+    max-width: $contentMaxWidth;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+*[data-ux="scroll-to-anchor"]{
+    cursor: pointer;
+    user-select: none;
+}
+
+.mobile-only{
+    display: none;       
+}
+
+.portrait-only{
+    display: none;
+}
+
+.global-btn {
+    a {
+        background: var(--surface-surface-accent, $buttonColor);
+        height: 48px;
+        display: block;
+        text-align: center;
+        font-size: 18px;
+        font-style: normal;
+        font-weight: 300;
+        line-height: 47px;
+        text-decoration: none;
+        @include transition(0.45s);
+
+        &:hover {
+            background-color: $darkColor;
+            color: $lightColor;
+        }
+    }
+}
+
+@keyframes zoom-in-zoom-out {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.2, 1.2);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@keyframes zoom-in-zoom-out-two {
+    0% {
+        transform: scale(1, 1);
+    }
+    50% {
+        transform: scale(1.5, 1.5);
+    }
+    100% {
+        transform: scale(1, 1);
+    }
+}
+
+@media (orientation: portrait) {
+    .landscape-only{
+        display: none !important;
+    }
+    .portrait-only{
+        display: block;
+        &.iblock{
+            display: inline-block;
+        }
+    }
+}
+
+@media(max-width: $bp_mobileMenuShift){
+    .desktop-only{
+        display: none !important;
+    }
+    .mobile-only{
+        display: block;
+        &.iblock{
+            display: inline-block;
+        }
+    }
+}

@@ -1,0 +1,292 @@
+.block--custom-layout__git {
+    position: relative;
+    font-family: $mainFont;
+
+    .git-top {
+        background-color: #000;
+        padding: 80px 0;
+
+        .git-top-list {
+            margin: 0 -126px;
+            margin-bottom: 24px;
+        }
+
+        .git-top-item {
+            color: var(--colour-grey-500, #737373);
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 110%;
+            padding: 0 10.5px;
+            text-wrap: nowrap;
+
+            @media(max-width: $bp_tabletPortrait3){
+                font-size: 48px;
+            }
+        }
+
+        .git-bot-icon {
+            position: relative;
+            max-width: 56px;
+            display: inline-block;
+            margin-right: 20px;
+            height: 56px;
+            vertical-align: middle;
+            top: 6px;
+            left: 23px;
+
+            
+            @media(max-width: $bp_mobileLandscape){
+                top: 0;
+            }
+
+            .click-text {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
+        }
+
+        .git-bot-item-inner {
+            display: flex;
+        }
+
+        .git-bot-title {
+            -webkit-text-stroke-width: 1px;
+            -webkit-text-stroke-color: var(--colour-grey-700, #454545);
+            font-size: 72px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 110%;
+            display: inline-block;
+            vertical-align: middle;
+
+            @media(max-width: $bp_tabletPortrait3){
+                font-size: 48px;
+            }
+        }
+
+        .git-bot-item {
+            padding: 0 10.5px;
+        }
+        
+    }
+
+    .git-bot {
+        .git-bot-inner {
+            display: flex;
+
+            @media(max-width: $bp_tabletPortrait3){
+                display: block;
+            }
+
+            .git-bot-col {
+                width: 50%;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    width: 100%;
+                }
+            }
+
+            .git-arrow {
+                position: absolute;
+                bottom: 24px;
+                right: 24px;
+            }
+
+            .git-arrow-inner {
+                width: 24px;
+                height: 24px;
+                background: #fff620;
+                border-radius: 50%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                position: relative;
+                cursor: pointer;
+
+                &::after {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 0px;
+                    left: 3%;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    z-index: 3;
+                    content: "";
+                    -webkit-animation: zoom-in-zoom-out 3s ease infinite;
+                    animation: zoom-in-zoom-out 3s ease infinite;
+                    background: rgba(255, 246, 32, .2);
+                    border-radius: 50%;
+                }
+
+                &::before {
+                    width: 24px;
+                    height: 24px;
+                    position: absolute;
+                    top: 0px;
+                    left: 3%;
+                    -webkit-transform: translate(-50%, -50%);
+                    transform: translate(-50%, -50%);
+                    z-index: 3;
+                    content: "";
+                    -webkit-animation: zoom-in-zoom-out-two 3s ease infinite;
+                    animation: zoom-in-zoom-out-two 3s ease infinite;
+                    background: rgba(255, 246, 32, .2);
+                    border-radius: 50%;
+                }
+
+                svg {
+                    position: relative;
+                    z-index: 5;
+                }
+            }
+
+            .git-bot-col.git-bot-left {
+                background: var(--Black-gradient, radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%));
+                padding: 120px 16px 0;
+
+                @media(max-width: $bp_mobileMenuShift){
+                    padding: 37px 16px 33px;
+                }
+
+                @media(max-width: $bp_mobileLandscape){
+                    padding: 48px 16px;
+                }
+
+                .git-bot-left-inner {
+                    max-width: 512px;
+                    margin: 0 auto;
+
+                    .git-bot-title {
+                        h2 {
+                            color: var(--Primary-White, var(--surface-surface-primary, #FFF));
+                            font-size: 36px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 50px;
+                            margin: 0;
+
+                            @media(max-width: $bp_mobileLandscape){
+                                font-size: 30px;
+                            }
+                        }
+                    }
+
+                    .git-bot-desc {
+                        margin-top: 49px;
+                        p {
+                            margin: 0;
+                            color: var(--Primary-White, #FFF);
+                            font-family: Sailec;
+                            font-size: 18px;
+                            font-style: normal;
+                            font-weight: 300;
+                            line-height: 26px;
+
+                            @media(max-width: $bp_mobileMenuShift){
+                                font-size: 15px;
+                                line-height: 22px;
+                            }
+
+                            @media(max-width: $bp_mobileLandscape){
+                                font-size: 16px;
+                                line-height: 24px;
+                            }
+                        }
+                    }
+                }
+            }
+
+            .git-bot-btns {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                max-width: 316px;
+                margin-top: 25px;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    display: block;
+                    max-width: 100%;
+                }
+            }
+
+            .git-bot-btn-item {
+                max-width: 153px;
+                width: 100%;
+
+                @media(max-width: $bp_tabletPortrait3){
+                    max-width: 100%;
+                    margin-bottom: 16px;
+                }
+            }
+
+            .git-bot-btn-item.git-trans {
+                a {
+                    border: 1px solid $buttonColor;
+                    display: block;
+                    height: 48px;
+                    text-align: center;
+                    text-decoration: none;
+                    color: $lightColor;
+                    font-size: 18px;
+                    font-style: normal;
+                    font-weight: 300;
+                    line-height: 47px;
+                    @include transition(0.45s);
+
+                    &:hover {
+                        background-color: $buttonColor;
+                        color: $darkColor;
+                    }
+                }
+            }
+
+            .git-right-img-item-inner {
+                position: relative;
+            }
+
+            .git-bot-right {
+                font-size: 0;
+                line-height: 1;
+                .slick-slide {
+                    border: none !important;
+                }
+
+                .git-bot-right-inner {
+                    height: 100%;
+
+                    .git-right-img {
+                        height: 100%;
+                    }
+                }
+            }
+            
+
+            .git-right-img {
+                position: relative;
+
+                button {
+                    display: none !important;
+                }
+
+                canvas {
+                    display: block;
+                    width: 100%;
+                    height: 100%;
+                }
+
+                img {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 100%;
+                    object-fit: cover;
+                }
+            }
+        }
+    }
+}

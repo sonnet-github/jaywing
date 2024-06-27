@@ -1,0 +1,233 @@
+.block--custom-layout__testi {
+    background: var(--Black-gradient, radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%));
+    font-family: $mainFont;
+    padding: 120px 0 120px 16px;
+
+    @media(max-width: $bp_mobileLandscape){
+        padding: 48px 0 48px 16px;
+    }
+
+    .testi-inner {
+        max-width: 1252px;
+        margin: 0 auto;
+
+        .testi-top-icon {
+            margin-bottom: 24px;
+        }
+
+        .testi-desk-arrow {
+            @media(max-width: $bp_tabletPortrait3){
+                display: none !important;
+            }
+        }
+
+        .testi-bot-arrow {
+            display: none !important;
+            margin-top: 48px !important;
+            @media(max-width: $bp_tabletPortrait3){
+                display: flex !important;
+            }
+        }
+
+        .testi-bot {
+            width: calc(((100vw - 850px) / 2) + 100%);
+
+            .slick-list.draggable{
+                padding: 64px 0 0;
+                overflow: initial !important;
+
+                @media(max-width: $bp_mobileLandscape){
+                    padding: 64px 76px 0 0;
+                }
+            }
+
+            @media(max-width: $bp_tabletPortrait3){
+                width: 100%;
+            }
+        }
+
+        .testi-title {
+            h2 {
+                margin: 0;
+                color: var(--colour-grey-500, #737373);
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 300;
+
+                @media(max-width: $bp_mobile){
+                    font-size: 30px;
+                }
+
+                span {
+                    display: block;
+                    color: #fff;
+                    margin-top: 7px;
+                    margin-bottom: 3px;
+                }
+            }
+        }
+
+        .testi-list {
+            margin: 0 -12px;
+        }
+
+        .testi-top-inner {
+            display: flex;
+            align-items: flex-end;
+            justify-content: space-between;
+        }        
+
+        .testi-arrows {
+            max-width: 108px;
+            display: flex;
+            width: 100%;
+            justify-content: space-between;
+
+            .testi-arrow {
+                width: 48px;
+                height: 48px;
+                display: flex;
+                align-items: center;
+                cursor: pointer;
+                justify-content: center;
+                border: 1px solid rgba(255,255,255, .20);
+                @include transition(0.45s);
+
+                &:hover {
+                    background-color: $buttonColor;
+                    border-color: $buttonColor;
+                }
+
+                svg {
+                    position: relative;
+                }
+
+                &:hover svg {
+                    filter: invert(1);
+                }
+            }
+
+            .testi-next svg,
+            .testi-prev svg {
+                @include transition(0.45s);
+            }
+
+            .testi-next:hover svg {
+                left: 2px;
+            }
+
+            .testi-prev:hover svg {
+                left: -2px;
+            }
+        }
+
+        
+
+        .testi-item {
+            padding: 0 12px;
+
+            img {
+                width: auto;
+            }
+
+            .testi-item-inner {
+                border-radius: 4px;
+                border: 1px solid rgba(255, 246, 32, .2);
+                background: var(--Black-gradient, radial-gradient(117.72% 141.42% at 100% 0, #1e1e1e 0, #000 100%));
+                min-height: 472px;
+                padding: 40px;
+                position: relative;
+                cursor: pointer;
+                @include transition(0.45s);
+
+                @media(max-width: $bp_mobileMenuShift){
+                    padding: 20px;
+                }
+
+                &:hover {
+                    background: var(--Primary-Yellow, #FFF620);
+                    border: 1px solid var(--Primary-Yellow, #FFF620);
+                    box-shadow: 0px 0px 80px 0px rgba(255, 246, 32, 0.40);
+                }
+
+                .testi-num {
+                    top: 67%;
+                    position: absolute;
+                    @include transition(0.45s);
+                }
+
+                &:hover .testi-num {
+                    top: 50%;
+                    transform: translateY(-50%)
+                }
+
+                .testi-logo-item {
+                    img {
+                        @include transition(0.45s);
+                    }
+                    
+                }
+
+                &:hover .testi-logo-item img {
+                    filter: invert(1);
+                }
+
+                .testi-num-inner {
+                    color: var(--surface-surface-primary, #FFF);
+                    font-size: 16px;
+                    font-style: normal;
+                    font-weight: 400;
+                    line-height: 1;
+                    @include transition(0.45s);
+                    span {
+                        color: var(--surface-surface-tertiary, #F9F7F7);
+                        font-size: 100px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 1;
+                        display: block;
+                        @include transition(0.45s);
+
+                        @media(max-width: $bp_mobileMenuShift){
+                            font-size: 70px;
+                        }
+                    }
+                }
+
+                &:hover .testi-num-inner,
+                &:hover .testi-num-inner span {
+                    color: #000;
+                }
+
+                .testi-hover-desc {
+                    opacity: 0;
+                    position: absolute;
+                    max-width: 292px;
+                    bottom: 0;
+                    @include transition(0.45s);
+
+                    @media(max-width: $bp_mobileMenuShift){
+                        max-width: 193px;
+                    }
+
+                    p {
+                        color: var(--Primary-Black, var(--text-text-primary, #000));
+                        font-size: 16px;
+                        font-style: normal;
+                        font-weight: 300;
+                        line-height: 20px;
+
+                        @media(max-width: $bp_mobileMenuShift){
+                            font-size: 14px;
+                            line-height: 17px;
+                        }
+                    }
+                }
+
+                &:hover .testi-hover-desc  {
+                    opacity: 1;
+                }
+            }
+        }
+    }
+}
