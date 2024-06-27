@@ -2,9 +2,9 @@
 /**
  * Brands Block Template
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 
     // Support custom "anchor" values.
@@ -53,7 +53,7 @@
                                     $BrandLogoItem = get_sub_field('brand_item');
                                     ?>
                                     <div class="brand-logo-slide-item">
-                                        <img src="<?= $BrandLogoItem['url'] ?>" class="" />
+                                        <img src="<?= $BrandLogoItem['url'] ?>" class="" alt="<?= $BrandLogoItem['alt'] ?>" />
                                     </div>
                                 <?php endwhile; ?>
                             </div>

@@ -2,9 +2,9 @@
 /**
  * Testimonials Block Template
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 
     // Support custom "anchor" values.
@@ -78,7 +78,7 @@
                                     <div class="testi-item">
                                         <div class="testi-item-inner">
                                             <div class="testi-logo-item">
-                                                <img src="<?= $TestiLogo['url'] ?>" class="" />
+                                                <img src="<?= $TestiLogo['url'] ?>" class="" width="80" height="44" alt="<?= $TestiLogo['alt'] ?>" />
                                             </div>
                                             <div class="testi-num">
                                                 <div class="testi-num-inner">

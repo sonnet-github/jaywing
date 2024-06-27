@@ -3,6 +3,7 @@ import { TweenMax, Expo } from 'gsap/TweenMax';
 class Capabilities {
   init() {
     this.OCSlide();
+    this.Ochover();
   }
 
   OCSlide() {
@@ -49,16 +50,18 @@ class Capabilities {
         centerMode: false,
         focusOnSelect: false
     });
+  }
 
-    jQuery('.oc-bot-item-inner').hover(
-        function() {
-            var currentID = jQuery(this).data('area-id');
-            var target = jQuery('.oc-bg-hover-item[data-area-id="' + currentID + '"]');
-            target.addClass('active');
-        },
-        function() {
-            jQuery('.oc-bg-hover-item').removeClass('active');
-        }
+  Ochover() {
+    $('.oc-bot-item-inner').hover(
+      function() {
+          var currentID = jQuery(this).data('area-id');
+          var target = jQuery('.oc-bg-hover-item[data-area-id="' + currentID + '"]');
+          target.addClass('active');
+      },
+      function() {
+          jQuery('.oc-bg-hover-item').removeClass('active');
+      }
     );
   }
 }

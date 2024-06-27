@@ -54,7 +54,7 @@
                 font-style: normal;
                 font-weight: 500;
                 line-height: 32px;
-                background: #FFF620;
+                background: $buttonColor;
                 display: inline-block;
                 padding: 0 5px;
 
@@ -75,7 +75,7 @@
             .stra-item-desc {
                 margin-top: 24px;
                 p {
-                    color: var(--text-text-primary, #000);
+                    color: $darkColor;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 300;

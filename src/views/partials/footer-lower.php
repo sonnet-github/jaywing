@@ -2,9 +2,9 @@
 /**
  * Footer Lower Template (Footer Block)
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
     $footer_logo = get_field('footer_logo_image', 'options');
     $ButtonGIT = get_field('header_get_in_touch', 'options');
@@ -25,7 +25,7 @@
     <div class="footer-bot-wrap">
         <div class="footer-bot">
             <div class="footer-logo">
-                <img src="<?= $footer_logo['url'] ?>" class="" />
+                <img src="<?= $footer_logo['url'] ?>" class="" width="127" height="18" alt="<?= $footer_logo['alt'] ?>" />
             </div>
             <div class="footer-smi">
                 <?php if(!empty(get_field('sl_facebook', 'options'))) : ?>

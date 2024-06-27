@@ -2,9 +2,9 @@
 /**
  * Get In Touch Block Template
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 
     // Support custom "anchor" values.
@@ -115,7 +115,7 @@
                                             <div class="git-right-img-item">
                                                 <div class="git-right-img-item-inner">
                                                     <canvas width="720" height="720"></canvas>
-                                                    <img src="<?= $GititleItem['url'] ?>" class="" />
+                                                    <img src="<?= $GititleItem['url'] ?>" class="" width="720" height="720" />
                                                 </div>
                                             </div>
                                         <?php endwhile; ?>

@@ -179,7 +179,7 @@
                 }
 
                 .footer-next-right {
-                    color: var(--Primary-White, var(--surface-surface-primary, #FFF));
+                    color: $lightColor;
                     font-size: 24px;
                     font-style: normal;
                     font-weight: 300;
@@ -232,7 +232,7 @@
 
             .footer-copy {
                 p {
-                    color: var(--surface-surface-primary, #FFF);
+                    color: $lightColor;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 300;

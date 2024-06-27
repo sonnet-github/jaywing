@@ -12,7 +12,7 @@
         }
 
         .git-top-item {
-            color: var(--colour-grey-500, #737373);
+            color: #737373;
             font-size: 72px;
             font-style: normal;
             font-weight: 300;
@@ -54,7 +54,7 @@
 
         .git-bot-title {
             -webkit-text-stroke-width: 1px;
-            -webkit-text-stroke-color: var(--colour-grey-700, #454545);
+            -webkit-text-stroke-color:  #454545;
             font-size: 72px;
             font-style: normal;
             font-weight: 300;
@@ -162,7 +162,7 @@
 
                     .git-bot-title {
                         h2 {
-                            color: var(--Primary-White, var(--surface-surface-primary, #FFF));
+                            color: $lightColor;
                             font-size: 36px;
                             font-style: normal;
                             font-weight: 300;
@@ -179,8 +179,7 @@
                         margin-top: 49px;
                         p {
                             margin: 0;
-                            color: var(--Primary-White, #FFF);
-                            font-family: Sailec;
+                            color: $lightColor;
                             font-size: 18px;
                             font-style: normal;
                             font-weight: 300;
@@ -235,7 +234,7 @@
                     font-style: normal;
                     font-weight: 300;
                     line-height: 47px;
-                    @include transition(0.45s);
+                    @include transition(background-color 0.44s, color 0.44s  $easeInOutExpo);
 
                     &:hover {
                         background-color: $buttonColor;

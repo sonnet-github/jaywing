@@ -2,9 +2,9 @@
 /**
  * Strategies Block Template
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 
     // Support custom "anchor" values.
@@ -61,7 +61,7 @@
                                 <div class="stra-item">
                                     <div class="stra-item-inner">
                                         <div class="stra-icon">
-                                            <img src="<?= $StraIcon['url'] ?>" class="" />      
+                                            <img src="<?= $StraIcon['url'] ?>" class="" width="80" height="80" alt="<?= $StraIcon['alt'] ?>" />      
                                         </div>
                                         <div class="stra-item-title">
                                             <?= $StaTitle ?>

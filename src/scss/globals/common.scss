@@ -117,7 +117,7 @@ ol{
 
 .global-btn {
     a {
-        background: var(--surface-surface-accent, $buttonColor);
+        background: $buttonColor;
         height: 48px;
         display: block;
         text-align: center;
@@ -126,7 +126,7 @@ ol{
         font-weight: 300;
         line-height: 47px;
         text-decoration: none;
-        @include transition(0.45s);
+        @include transition(color 0.20s, background-color 0.20s $easeInOutExpo);
 
         &:hover {
             background-color: $darkColor;

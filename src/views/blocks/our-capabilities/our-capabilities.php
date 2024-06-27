@@ -2,9 +2,9 @@
 /**
  * Our Capabilities Block Template
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 
     // Support custom "anchor" values.
@@ -54,7 +54,7 @@
                                     $OcBg = get_sub_field('oc_background_img');
                                     ?>
                                     <div class="oc-bg-item">
-                                        <img src="<?= $OcBg['url'] ?>" class="" />
+                                        <img src="<?= $OcBg['url'] ?>" class="" width="1440" height="800" alt="<?= $OcBg['alt'] ?>" />
                                     </div>
                                 <?php endwhile; ?>
                             </div>
@@ -69,7 +69,7 @@
                                 $OcID = get_sub_field('oc_id');
                                 ?>
                                 <div class="oc-bg-hover-item" data-area-id="<?= $OcID ?>">
-                                    <img src="<?= $OcBgg['url'] ?>" class="" />
+                                    <img src="<?= $OcBgg['url'] ?>" class="" width="1440" height="800" alt="<?= $OcBgg['alt'] ?>"/>
                                 </div>
                             <?php endwhile; ?>
                         </div>

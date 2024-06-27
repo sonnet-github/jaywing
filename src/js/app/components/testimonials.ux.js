@@ -9,7 +9,7 @@ class Testimonials {
     $('.testi-list').slick({
       dots: false,
       infinite: false,
-      slidesToShow: 4,
+      slidesToShow: 3,
       slidesToScroll: 1,
       autoplaySpeed: 4500,
       draggable: true,

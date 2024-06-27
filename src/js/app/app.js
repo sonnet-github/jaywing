@@ -12,7 +12,7 @@ import './components/testimonials.ux';
 import './components/our-capabilities.ux';
 import './components/get-in-touch.ux';
 
-
+import './utils/jquery.magnific-popup.min';
 import './utils/slick.min';
 
 class WebApp {
@@ -56,6 +56,13 @@ class WebApp {
 
         $('.service-item').bind('click', function(){
             $(this).toggleClass('active-item');
+        });
+
+        $('.pop-desc').magnificPopup({
+            type: 'inline',
+            mainClass: 'mfp-fade-magni',
+            titleSrc: 'title'
+    
         });
 
     }

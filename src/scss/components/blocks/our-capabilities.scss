@@ -71,7 +71,7 @@
                 left: 0;
                 width: 100%;
                 height: 100%;
-                @include transition(0.45s);
+                @include transition(opacity 0.44s $easeInOutExpo);
 
                 &.active {
                     opacity: 1;
@@ -173,7 +173,7 @@
                 }                
 
                 .oc-title {
-                    color: var(--colour-grey-300, #B9B9B9);
+                    color: #B9B9B9;
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 300;
@@ -181,7 +181,7 @@
                     margin-bottom: 48px;
 
                     span {
-                        color: var(--Primary-Yellow, #FFF620);
+                        color: $buttonColor;
                         font-size: 18px;
                         font-style: normal;
                         font-weight: 500;
@@ -199,7 +199,7 @@
                 .oc-main-title {
                     h2 {
                         margin: 0;
-                        color: var(--Primary-White, var(--surface-surface-primary, #FFF));
+                        color: #FFF;
                         font-size: 36px;
                         font-style: normal;
                         font-weight: 300;
@@ -224,7 +224,7 @@
                 .oc-arrow {
                     width: 24px;
                     height: 24px;
-                    background: #FFF620;
+                    background: $buttonColor;
                     border-radius: 50%;
                     display: flex;
                     align-items: center;
@@ -321,21 +321,20 @@
                     }
 
                     .oc-bot-num {
-                        color: var(--surface-surface-primary, #FFF);
-                        font-family: Sailec;
+                        color: $lightColor;
                         font-size: 16px;
                         font-style: normal;
                         font-weight: 300;
                         line-height: 20px;
-                        @include transition(0.45s);
+                        @include transition(color 0.44s $easeInOutExpo);
                     }
 
                     .oc-bot-item-inner:hover .oc-bot-num {
-                        color: #FFF620;
+                        color: $buttonColor;
                     }
 
                     .oc-bot-item-title {
-                        color: var(--surface-surface-primary, #FFF);
+                        color: $lightColor;
                         font-size: 40px;
                         font-style: normal;
                         font-weight: 300;
@@ -366,7 +365,7 @@
                         top: -30px;
                         @include transition(0.45s);
                         p {
-                            color: var(--surface-surface-primary, #FFF);
+                            color: $lightColor;
                             font-size: 16px;
                             font-style: normal;
                             font-weight: 300;
@@ -381,7 +380,7 @@
 
                 .slick-current.slick-active {
                     .oc-bot-num {
-                        color: #FFF620;
+                        color: $buttonColor;
                     }
 
                     .oc-bot-item-desc {

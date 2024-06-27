@@ -2,9 +2,9 @@
 /**
  * Navigation Template - Right Side
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 ?>
 <?php
@@ -39,3 +39,37 @@
         <?php } 
     endforeach; 
 ?>
+
+    <div class="social-links-menu">
+
+        <?php if(!empty(get_field('sl_facebook', 'options'))) : ?>
+            <a href="<?= get_field('sl_facebook', 'options') ?>" target="_blank">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+        <?php endif; ?>
+        
+        <?php if(!empty(get_field('sl_instagram', 'options'))) : ?>
+            <a href="<?= get_field('sl_instagram', 'options') ?>" target="_blank">
+                <i class="fab fa-instagram"></i>
+            </a>
+        <?php endif; ?>
+        
+        <?php if(!empty(get_field('sl_twitter', 'options'))) : ?>
+            <a href="<?= get_field('sl_twitter', 'options') ?>" target="_blank">
+                <i class="fab fa-twitter"></i>
+            </a>
+        <?php endif; ?>
+        
+        <?php if(!empty(get_field('sl_youtube', 'options'))) : ?>
+            <a href="<?= get_field('sl_youtube', 'options') ?>" target="_blank">
+                <i class="fab fa-youtube"></i>
+            </a>
+        <?php endif; ?>
+        
+        <?php if(!empty(get_field('sl_linked_in', 'options'))) : ?>
+            <a href="<?= get_field('sl_linked_in', 'options') ?>" target="_blank">
+                <i class="fab fa-linkedin-in"></i>
+            </a>
+        <?php endif; ?>
+
+    </div>

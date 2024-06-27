@@ -2,9 +2,9 @@
 /**
  * Footer Upper Template (Footer Block)
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 
     $phone = get_field('gen_phone_number', 'options');
