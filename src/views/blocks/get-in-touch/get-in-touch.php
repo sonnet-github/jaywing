@@ -115,7 +115,7 @@
                                             <div class="git-right-img-item">
                                                 <div class="git-right-img-item-inner">
                                                     <canvas width="720" height="720"></canvas>
-                                                    <img src="<?= $GititleItem['url'] ?>" class="" width="720" height="720" />
+                                                    <img src="<?= $GititleItem['url'] ?>" class="" width="720" height="720" alt="<?= $GititleItem['alt'] ?>" />
                                                 </div>
                                             </div>
                                         <?php endwhile; ?>

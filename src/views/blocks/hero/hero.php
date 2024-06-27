@@ -65,7 +65,7 @@
                                     $BrandLogoItem = get_sub_field('hero_brand_logo_item');
                                     ?>
                                     <div class="hero-logo-slide-item">
-                                        <img src="<?= $BrandLogoItem['url'] ?>" class="" />
+                                        <img src="<?= $BrandLogoItem['url'] ?>" class="" alt="<?= $BrandLogoItem['alt'] ?>" />
                                     </div>
                                 <?php endwhile; ?>
                             </div>

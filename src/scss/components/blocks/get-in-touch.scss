@@ -3,7 +3,7 @@
     font-family: $mainFont;
 
     .git-top {
-        background-color: #000;
+        background-color: $darkColor;
         padding: 80px 0;
 
         .git-top-list {
@@ -12,7 +12,7 @@
         }
 
         .git-top-item {
-            color: #737373;
+            color: getColor(6);
             font-size: 72px;
             font-style: normal;
             font-weight: 300;

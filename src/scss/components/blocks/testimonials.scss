@@ -48,7 +48,7 @@
         .testi-title {
             h2 {
                 margin: 0;
-                color: #737373;
+                color: getColor(6);
                 font-size: 40px;
                 font-style: normal;
                 font-weight: 300;
@@ -172,14 +172,14 @@
                 }
 
                 .testi-num-inner {
-                    color: #FFF;
+                    color: $lightColor;
                     font-size: 16px;
                     font-style: normal;
                     font-weight: 400;
                     line-height: 1;
                     @include transition(color 0.34s $easeInOutExpo);
                     span {
-                        color: #F9F7F7;
+                        color: getColor(5);
                         font-size: 100px;
                         font-style: normal;
                         font-weight: 300;
@@ -195,7 +195,7 @@
 
                 &:hover .testi-num-inner,
                 &:hover .testi-num-inner span {
-                    color: #000;
+                    color: $darkColor;
                 }
 
                 .testi-hover-desc {

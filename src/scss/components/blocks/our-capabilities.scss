@@ -173,7 +173,7 @@
                 }                
 
                 .oc-title {
-                    color: #B9B9B9;
+                    color: getColor(8);
                     font-size: 18px;
                     font-style: normal;
                     font-weight: 300;
@@ -199,7 +199,7 @@
                 .oc-main-title {
                     h2 {
                         margin: 0;
-                        color: #FFF;
+                        color: $lightColor;
                         font-size: 36px;
                         font-style: normal;
                         font-weight: 300;
