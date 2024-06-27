@@ -135,6 +135,11 @@ ol{
     }
 }
 
+// popupstyle
+.mfp-fade-magni {
+    background: radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%);
+}
+
 @keyframes zoom-in-zoom-out {
     0% {
         transform: scale(1, 1);

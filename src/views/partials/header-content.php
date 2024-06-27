@@ -14,6 +14,15 @@
     $SecondLogo = get_field('header_logo_right', 'options');
 
 ?>
+<div class="git-pop white-popup mfp-hide" id="git-pop">
+    <div class="git-pop-inner">
+        <div class="git-pop-wrap">
+            <div class="git-title">
+                <h2>Want to work with us? <span>Get in touch</span></h2>
+            </div>
+        </div>
+    </div>
+</div>
 <header id="page-header" class="page-header--<?= $header_type ?>">
     <div class="header-inner">
         <div class="header-logo header-left">
@@ -63,7 +72,7 @@
         <div class="header-btn header-right">
             <div class="header-right-inner">
                 <div class="header-btn-item global-btn">
-                    <a href="<?= $ButtonGIT['url'] ?>"><?= $ButtonGIT['title'] ?></a>
+                    <a href="<?= $ButtonGIT['url'] ?>" class="pop-desc"><?= $ButtonGIT['title'] ?></a>
                 </div>
             </div>
         </div>

@@ -145,7 +145,7 @@
             }
 
             .git-bot-col.git-bot-left {
-                background: var(--Black-gradient, radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%));
+                background: radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%);
                 padding: 120px 16px 0;
 
                 @media(max-width: $bp_mobileMenuShift){

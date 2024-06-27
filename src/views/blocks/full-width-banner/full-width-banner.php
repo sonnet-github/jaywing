@@ -2,9 +2,9 @@
 /**
  * Full Width Banner Block Template
  *
- * @package SDEV
- * @subpackage SDEV WP
- * @since SDEV WP Theme 2.0
+ * @package Jaywing
+ * @subpackage Jaywing WP
+ * @since Jaywing WP Theme 2.0
  */  
 
     // Support custom "anchor" values.
