@@ -17,7 +17,7 @@
             </div>
             <div class="footer-next-left">
                 <div class="footer-btn global-btn">
-                    <a href="<?= $ButtonGIT['url'] ?>"><?= $ButtonGIT['title'] ?></a>
+                    <a href="<?= $ButtonGIT['url'] ?>" class="pop-desc"><?= $ButtonGIT['title'] ?></a>
                 </div>
             </div>
         </div>

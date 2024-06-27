@@ -17,8 +17,54 @@
 <div class="git-pop white-popup mfp-hide" id="git-pop">
     <div class="git-pop-inner">
         <div class="git-pop-wrap">
-            <div class="git-title">
-                <h2>Want to work with us? <span>Get in touch</span></h2>
+            <div class="git-logo">
+                <div class="git-logo git-left">
+                    <div class="git-logo-inner">
+                        <div class="git-logo-item">
+                            <?php if($header_type == 'home') : ?>
+                                <a href="<?= get_site_url(null, ''); ?>" class="main-logo main-logo--home">
+                                    <?php if($logo_type == 'svg') : ?>
+                                            <?= get_field('main_logo_svg', 'options') ?>
+                                    <?php else: 
+                                            $logo = get_field('main_logo','options'); ?>
+                                            <img src="<?= $logo['url'] ?>" alt="<?= $logo['alt'] ?>" width="127" height="18" />
+                                    <?php endif; ?>
+                                </a>
+                            <?php else : ?>
+                                <a href="<?= get_site_url(null, ''); ?>" class="main-logo">
+                                    <?php if($mobile_logo_type == 'svg') : ?>
+                                            <?= get_field('mobile_logo_svg', 'options') ?>
+                                    <?php else: 
+                                            $logo = get_field('mobile_logo','options'); ?>
+                                            <img src="<?= $logo['url'] ?>" alt="<?= $logo['alt'] ?>" width="127" height="18" />
+                                    <?php endif; ?>
+                                </a>
+                            <?php endif; ?>
+                            <a href="<?= get_site_url(null, ''); ?>" class="mobile-logo">
+                                <?php if($mobile_logo_type == 'svg') : ?>
+                                        <?= get_field('mobile_logo_svg', 'options') ?>
+                                <?php else: 
+                                        $logo = get_field('mobile_logo','options'); ?>
+                                        <img src="<?= $logo['url'] ?>" alt="<?= $logo['alt'] ?>" width="127" height="18" />
+                                <?php endif; ?>
+                            </a>
+                            <a href="<?= get_site_url(null, ''); ?>" class="alt-logo">
+                                <?php if($alt_logo_type == 'svg') : ?>
+                                        <?= get_field('alt_logo_svg', 'options') ?>
+                                <?php else: 
+                                        $logo = get_field('alt_logo','options'); ?>
+                                        <img src="<?= $logo['url'] ?>" alt="<?= $logo['alt'] ?>" width="127" height="18" />
+                                <?php endif; ?>
+                            </a>
+                        </div>
+                        <div class="git-logo-left">
+                            <img src="<?= $SecondLogo['url'] ?>" class="" width="324" height="36" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="git-form">
+                <?php echo do_shortcode('[forminator_form id="167"]')?>
             </div>
         </div>
     </div>

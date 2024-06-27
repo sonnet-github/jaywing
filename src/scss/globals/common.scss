@@ -135,9 +135,333 @@ ol{
     }
 }
 
+// coockie Plugin
+.cky-consent-container.cky-banner-bottom {
+    bottom: 24px;
+    padding: 0 16px;
+
+    p.cky-title {
+        display: none !important;
+    }
+
+    .cky-consent-bar {
+        max-width: 1280px;
+        margin: 0 auto;
+        border-radius: 4px !important;
+        background: rgba(0, 0, 0, 0.40) !important;
+        backdrop-filter: blur(10px) !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 24px !important;
+    }
+
+    .cky-notice-des {
+        max-width: 620px !important;
+        p {
+            color: $lightColor !important;
+            font-size: 16px !important;
+            font-style: normal !important;
+            font-weight: 300 !important;
+            line-height: 20px !important;
+        }
+        
+    }
+
+    .cky-btn {
+        margin: 0 16px 0 0 !important;
+        text-align: center !important;
+        text-transform: none !important;
+        min-height: 0 !important;
+        color: #FFF !important;
+        font-size: 18px !important;
+        font-style: normal !important;
+        font-weight: 300 !important;
+        line-height: 26px !important;
+    }
+
+    button.cky-btn.cky-btn-accept {
+        color: #000 !important;
+    }
+}
+
+
 // popupstyle
 .mfp-fade-magni {
     background: radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%);
+
+    .mfp-container {
+        padding: 0 !important;
+    }
+
+    .git-pop {
+        padding: 26px 20px 25px 117px;
+        background: radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%);
+        height: 100%;
+
+        @media(max-width: $bp_mobileMenuShift){
+            padding: 26px 20px 25px 16px;
+        }
+    }
+
+    .mfp-content {
+        height: 100%;
+    }
+
+    .forminator-response-message {
+        background: transparent !important;
+        border: none !important;
+        box-shadow: none !important;
+        padding: 0 !important;
+        margin: 0 !important;
+
+        h2 {
+            margin: 0 !important;
+            color: #737373;
+            font-size: 40px;
+            font-style: normal;
+            font-weight: 300;
+            line-height: 110%;
+
+            span {
+                display: block !important;
+                color: #FFF;
+                margin-top: 3px;
+            }
+        }
+    }
+
+    .git-logo.git-left {
+        margin-bottom: 146px;
+
+        @media(max-width: $bp_mobile){
+            margin-bottom: 57px;
+        }
+
+        .git-logo-left {
+            @media(max-width: $bp_mobileLandscape){
+                display: none;
+            }
+        }
+
+        .git-logo-item {
+            @media(max-width: $bp_mobile){
+                width: 100px;
+            }
+        }
+    }
+
+    button.mfp-close {
+        position: absolute !important;
+        top: 27px !important;
+        right: 80px !important;
+        border: 1px solid rgba(255, 255, 255, 0.20) !important;
+        width: 48px !important;
+        height: 48px !important;
+        color: #fff !important;
+        opacity: 1 !important;
+
+        @media(max-width: $bp_tabletPortrait3){
+            right: 16px !important;
+        }
+
+        @media(max-width: $bp_mobile){
+            width: 24px !important;
+            height: 24px !important;
+            font-size: 18px;
+            line-height: 1;
+        }
+    }
+
+    .git-pop-inner {
+        max-width: 998px;
+
+        .git-logo-item {
+            a.mobile-logo,
+            a.alt-logo {
+                display: none;
+            }
+        }
+
+        .git-logo-inner {
+            max-width: 515px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            .git-logo-item {
+                position: relative;
+                
+                &::after {
+                    content: "";
+                    width: 1px;
+                    height: 29px;
+                    position: absolute;
+                    top: 50%;
+                    -webkit-transform: translateY(-50%);
+                    transform: translateY(-50%);
+                    right: -35px;
+                    background-color: $lightColor;
+
+                    @media(max-width: $bp_mobileLandscape){
+                        display: none;
+                    }
+                }
+            }
+            
+        }
+
+        .git-title {
+            h2 {
+                color: #737373;
+                font-size: 40px;
+                font-style: normal;
+                font-weight: 300;
+                line-height: 110%;
+
+                span {
+                    display: block;
+                    color: $lightColor;
+                }
+
+                @media(max-width: $bp_mobile){
+                    font-size: 30px;
+                }
+            }
+        }
+
+        .git-form {
+            .forminator-field {
+                label {
+                    color: $lightColor !important;
+                    font-size: 16px !important;
+                    font-style: normal !important;
+                    font-weight: 400 !important;
+                    line-height: 20px !important;
+                    justify-content: center !important;
+                    margin-bottom: 8px !important;
+
+                    span.forminator-required {
+                        display: none !important; 
+                    }
+                }
+
+                input {
+                    height: 52px !important;
+                    border: none !important;
+                    border-bottom: 2px solid $lightColor !important;
+                    color: #737373 !important;
+                    font-size: 16px !important;
+                    font-style: normal !important;
+                    font-weight: 400 !important;
+                    line-height: 20px !important;
+                    background-color: transparent !important;
+                    padding: 0 !important;
+                }
+            }
+
+            .forminator-row {
+                margin-bottom: 53px !important;
+            }
+
+            .forminator-row.forminator-row-last {
+                button {
+                    background: $buttonColor !important;
+                    color: $darkColor !important;
+                    max-width: 191px !important;
+                    font-size: 18px !important;
+                    font-style: normal;
+                    font-weight: 300 !important;
+                    line-height: 26px !important;
+                    height: 56px !important;
+                    display: block !important;
+                    width: 100% !important;
+                    @include transition(background-color 0.44s, color 0.44s  $easeInOutExpo);
+
+                    @media(max-width: $bp_mobile){
+                        max-width: 100% !important;
+                    }
+
+                    &:hover {
+                        background-color: $lightColor !important;
+                    }
+                }
+            }
+
+            .forminator-field-radio {
+                .forminator-label {
+                    color: $lightColor !important;
+                    font-size: 16px !important;
+                    font-style: normal !important;
+                    font-weight: 400 !important;
+                    line-height: 20px !important;
+                }
+            }
+
+            .forminator-radio {
+                background: var(--Black-gradient, radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%));
+                padding: 0 16px !important;
+                height: 60px !important;
+                color: #737373 !important;
+                font-size: 16px !important;
+                font-style: normal !important;
+                font-weight: 400 !important;
+                line-height: 20px !important;
+                display: inline-block;
+                margin-right: 16px !important;
+
+                @media(max-width: $bp_mobile){
+                    padding: 0 15px !important;
+                }
+
+                .forminator-radio-bullet {
+                    width: 100% !important;
+                    height: 100% !important;
+                    max-width: 100% !important;
+                    flex: 0 !important;
+                    position: absolute;
+                    border-radius: 0;
+                    left: 0 !important;
+                    border-radius: 4px !important;
+                    border: 1px solid rgba(255, 246, 32, 0.20) !important;
+                    background: var(--Black-gradient, radial-gradient(117.72% 141.42% at 100% 0%, #1E1E1E 0%, #000 100%));
+
+                    &::before {
+                        width: 100% !important;
+                        height: 100% !important;
+                        background-color: $buttonColor !important;
+                        border-radius: 0 !important;
+                    }
+                }
+
+                input:checked+.forminator-radio-bullet+span.forminator-radio-label {
+                    color: $darkColor !important;
+                }
+
+                input:checked+.forminator-radio-bullet {
+                    box-shadow: 0px 4px 40px 0px rgba(255, 246, 32, 0.40) !important;
+                }
+
+                span.forminator-radio-label {
+                    margin: 0 !important;
+                    position: relative !important;
+                    z-index: 5;
+                    color: #F9F7F7 !important; 
+                    font-size: 16px !important;
+                    font-style: normal !important;
+                    font-weight: 300 !important;
+                    line-height: 100% !important;
+                    top: 50%;
+                    transform: translateY(-50%);
+                }
+
+                input {
+                    width: 100% !important;
+                    height: 100% !important;
+                    left: 0 !important;
+                }
+            }
+        }
+    }
 }
 
 @keyframes zoom-in-zoom-out {

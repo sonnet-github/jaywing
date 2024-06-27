@@ -99,7 +99,7 @@
                                     <a href="<?= $LeftLearn['url'] ?>"><?= $LeftLearn['title'] ?></a>
                                 </div>
                                 <div class="git-bot-btn-item global-btn">
-                                    <a href="<?= $LeftGit['url'] ?>"><?= $LeftGit['title'] ?></a>
+                                    <a href="<?= $LeftGit['url'] ?>" class="pop-desc"><?= $LeftGit['title'] ?></a>
                                 </div>
                             </div>
                         </div>
